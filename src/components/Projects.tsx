@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import FadeIn from './FadeIn'
+import LazyImage from './LazyImage'
 import TiltCard from './TiltCard'
 import { projects } from '../data/portfolio'
 
@@ -44,10 +45,10 @@ export default function Projects() {
                 >
                   <div className="work-featured-inner">
                     <div className="project-featured-media relative h-[180px] md:h-[220px] md:min-h-0 md:w-[45%] md:shrink-0">
-                      <img
+                      <LazyImage
                         src={featured.image}
                         alt={`${featured.title} preview`}
-                        loading="lazy"
+                        eager
                         className="project-featured-image h-full w-full object-cover object-center"
                       />
                       <div className="project-featured-overlay" aria-hidden="true" />
@@ -94,10 +95,9 @@ export default function Projects() {
                       <div
                         className={`project-thumb relative h-[130px] w-full shrink-0 overflow-hidden sm:w-[42%]${project.title === 'JobSingha' ? ' project-thumb-framed' : ''}`}
                       >
-                        <img
+                        <LazyImage
                           src={project.image}
                           alt={`${project.title} preview`}
-                          loading="lazy"
                           className="project-thumb-image h-full w-full object-cover object-center"
                         />
                         <div className="project-thumb-overlay" aria-hidden="true" />

@@ -529,7 +529,12 @@ body {
 
   .work-card-body {
     border-left: 1px solid var(--theme-border);
+    min-width: 0;
   }
+}
+
+.work-featured-body {
+  min-width: 0;
 }
 
 .project-featured-media {
@@ -657,6 +662,34 @@ body {
   left: 1rem;
   color: color-mix(in srgb, var(--theme-cream) 15%, transparent);
   pointer-events: none;
+}
+
+/* ── Lazy images ── */
+.lazy-image-placeholder {
+  background: var(--theme-charcoal-muted);
+  transition: opacity 0.35s ease;
+}
+
+.lazy-image-placeholder--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lazy-image-img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.lazy-image-img--loaded {
+  opacity: 1;
+}
+
+.group:hover .lazy-image-img--loaded.project-featured-image {
+  transform: scale(1.05);
+}
+
+.group:hover .lazy-image-img--loaded.project-thumb-image {
+  transform: scale(1.06);
 }
 
 
