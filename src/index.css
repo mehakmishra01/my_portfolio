@@ -451,6 +451,21 @@ body {
 .bento-tile-accent .label-caps,
 .bento-tile-accent p { color: #f3efe9; }
 
+.bento-accent-link {
+  color: #f3efe9;
+  opacity: 0.92;
+  border-bottom: 1px dashed rgba(243, 239, 233, 0.35);
+  padding-bottom: 0.2rem;
+  width: fit-content;
+  transition: opacity 0.3s ease, border-color 0.3s ease, gap 0.3s ease, transform 0.3s ease;
+}
+
+.group:hover .bento-accent-link {
+  opacity: 1;
+  border-color: rgba(243, 239, 233, 0.75);
+  gap: 0.625rem;
+}
+
 .stat-row {
   display: flex;
   align-items: baseline;

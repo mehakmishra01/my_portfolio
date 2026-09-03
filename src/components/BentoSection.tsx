@@ -112,7 +112,7 @@ export default function BentoSection() {
                 <p className="mt-3 font-serif text-xl leading-snug text-cream md:text-2xl">
                   Open to internships, collaborations, and full-time roles.
                 </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-xs tracking-widest text-cream/80 uppercase transition-all group-hover:gap-3">
+                <span className="bento-accent-link mt-5 inline-flex items-center gap-2 label-caps uppercase">
                   Get in touch
                   <ArrowUpRight size={12} />
                 </span>
