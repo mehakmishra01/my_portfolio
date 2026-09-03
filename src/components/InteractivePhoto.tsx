@@ -76,11 +76,7 @@ export default function InteractivePhoto() {
         onDragStart={() => setIsDragging(true)}
         onDrag={handleDrag}
         onDragEnd={() => setIsDragging(false)}
-        style={{
-          rotateX,
-          rotateY,
-          transformStyle: 'preserve-3d',
-        }}
+        style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
         className="photo-card relative cursor-grab active:cursor-grabbing"
         whileTap={{ scale: 0.98 }}
       >
@@ -90,24 +86,25 @@ export default function InteractivePhoto() {
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             src="/mehak.jpg"
-            alt="Mehak Mishra — drag to rotate"
+            alt="Mahak Mishra — drag to rotate"
             className="photo-image"
             draggable={false}
           />
           <div className="photo-shine" aria-hidden="true" />
           <div className="photo-edge photo-edge-left" aria-hidden="true" />
           <div className="photo-edge photo-edge-right" aria-hidden="true" />
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: hasInteracted ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
+            className="photo-drag-hint"
+            aria-hidden={hasInteracted}
+          >
+            <span>drag to rotate 360°</span>
+          </motion.div>
         </div>
       </motion.div>
-
-      <motion.p
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: hasInteracted ? 0 : 1, y: hasInteracted ? -4 : 0 }}
-        transition={{ duration: 0.5 }}
-        className="pointer-events-none absolute -bottom-10 left-1/2 w-max -translate-x-1/2 text-[10px] tracking-[0.25em] text-cream-muted uppercase"
-      >
-        Drag to rotate 360°
-      </motion.p>
     </div>
   )
 }

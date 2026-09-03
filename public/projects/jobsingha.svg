@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="jsFrameBg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f3efe9"/>
+      <stop offset="1" stop-color="#e8e2da"/>
+    </linearGradient>
+    <clipPath id="jsScreen">
+      <rect x="48" y="88" width="1104" height="555" rx="0"/>
+    </clipPath>
+    <filter id="jsFrameShadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#2a2620" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#jsFrameBg)"/>
+
+  <!-- Browser window -->
+  <g filter="url(#jsFrameShadow)">
+    <rect x="32" y="40" width="1136" height="595" rx="14" fill="#fff" stroke="#ddd5c8" stroke-width="1"/>
+    <!-- Title bar -->
+    <rect x="32" y="40" width="1136" height="48" rx="14" fill="#ece5db"/>
+    <rect x="32" y="74" width="1136" height="14" fill="#ece5db"/>
+    <!-- Traffic lights -->
+    <circle cx="68" cy="64" r="7" fill="#d4847a"/>
+    <circle cx="92" cy="64" r="7" fill="#d4b87a"/>
+    <circle cx="116" cy="64" r="7" fill="#7a8b6e"/>
+    <!-- URL bar -->
+    <rect x="440" y="52" width="320" height="24" rx="12" fill="#fff" fill-opacity="0.85"/>
+    <text x="520" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#6b6358">jobsingha.com</text>
+    <!-- Screenshot -->
+    <image
+      href="jobsingha.png"
+      xlink:href="jobsingha.png"
+      x="48"
+      y="88"
+      width="1104"
+      height="547"
+      preserveAspectRatio="xMidYMin slice"
+      clip-path="url(#jsScreen)"
+    />
+  </g>
+</svg>

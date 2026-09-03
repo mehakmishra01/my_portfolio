@@ -1,15 +1,20 @@
 import Hero from './components/Hero'
-import Services from './components/Services'
+import BentoSection from './components/BentoSection'
 import Projects from './components/Projects'
+import BeyondSection from './components/BeyondSection'
 import Process from './components/Process'
 import Contact from './components/Contact'
+import ScrollProgress from './components/ScrollProgress'
 
 export default function App() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="relative overflow-x-hidden">
+      <ScrollProgress />
+      <div className="film-grain" aria-hidden="true" />
       <Hero />
-      <Services />
+      <BentoSection />
       <Projects />
+      <BeyondSection />
       <Process />
       <Contact />
     </main>

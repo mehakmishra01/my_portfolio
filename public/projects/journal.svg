@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="journalBg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f4ef"/>
+      <stop offset="1" stop-color="#ebe4da"/>
+    </linearGradient>
+    <filter id="jShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#2a2620" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#journalBg)"/>
+
+  <!-- Left sidebar - memories -->
+  <rect x="40" y="40" width="260" height="595" rx="18" fill="#f5f0e8" stroke="#ddd5c8"/>
+  <text x="64" y="80" font-family="Georgia, serif" font-size="20" fill="#4a5d42">Memories</text>
+  <line x1="64" y1="94" x2="276" y2="94" stroke="#ddd5c8"/>
+
+  <!-- Polaroids -->
+  <g filter="url(#jShadow)">
+    <rect x="64" y="112" width="100" height="120" rx="5" fill="#fff" transform="rotate(-5 114 172)"/>
+    <rect x="72" y="120" width="84" height="72" rx="3" fill="#c4a882" opacity="0.4" transform="rotate(-5 114 172)"/>
+    <rect x="78" y="200" width="56" height="5" rx="2" fill="#6b6358" opacity="0.35" transform="rotate(-5 114 172)"/>
+    <text x="82" y="198" font-family="Pinyon Script, cursive" font-size="11" fill="#6b6358" transform="rotate(-5 114 172)">summer '25</text>
+  </g>
+  <g filter="url(#jShadow)">
+    <rect x="168" y="120" width="100" height="120" rx="5" fill="#fff" transform="rotate(4 218 180)"/>
+    <rect x="176" y="128" width="84" height="72" rx="3" fill="#4a5d42" opacity="0.25" transform="rotate(4 218 180)"/>
+    <rect x="182" y="208" width="52" height="5" rx="2" fill="#6b6358" opacity="0.35" transform="rotate(4 218 180)"/>
+    <text x="186" y="206" font-family="Pinyon Script, cursive" font-size="11" fill="#6b6358" transform="rotate(4 218 180)">coffee shop</text>
+  </g>
+  <g filter="url(#jShadow)">
+    <rect x="64" y="252" width="100" height="120" rx="5" fill="#fff" transform="rotate(2 114 312)"/>
+    <rect x="72" y="260" width="84" height="72" rx="3" fill="#6b6358" opacity="0.18" transform="rotate(2 114 312)"/>
+    <text x="82" y="338" font-family="Pinyon Script, cursive" font-size="11" fill="#6b6358" transform="rotate(2 114 312)">sunset walk</text>
+  </g>
+
+  <!-- Tags -->
+  <text x="64" y="410" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">TAGS</text>
+  <rect x="64" y="424" width="64" height="26" rx="13" fill="#4a5d42" fill-opacity="0.1" stroke="#4a5d42" stroke-opacity="0.2"/>
+  <text x="78" y="442" font-family="system-ui" font-size="10" fill="#4a5d42">gratitude</text>
+  <rect x="136" y="424" width="56" height="26" rx="13" fill="#c4a882" fill-opacity="0.15"/>
+  <text x="148" y="442" font-family="system-ui" font-size="10" fill="#6b6358">travel</text>
+  <rect x="200" y="424" width="52" height="26" rx="13" fill="#ece5db"/>
+  <text x="212" y="442" font-family="system-ui" font-size="10" fill="#6b6358">ideas</text>
+  <rect x="64" y="460" width="48" height="26" rx="13" fill="#4a5d42" fill-opacity="0.08"/>
+  <text x="76" y="478" font-family="system-ui" font-size="10" fill="#4a5d42">growth</text>
+
+  <!-- Mood tracker mini -->
+  <text x="64" y="520" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">THIS WEEK</text>
+  <circle cx="80" cy="548" r="14" fill="#4a5d42" opacity="0.15"/>
+  <text x="74" y="553" font-family="system-ui" font-size="12">😊</text>
+  <circle cx="120" cy="548" r="14" fill="#c4a882" opacity="0.2"/>
+  <text x="114" y="553" font-family="system-ui" font-size="12">🌿</text>
+  <circle cx="160" cy="548" r="14" fill="#4a5d42" opacity="0.1"/>
+  <text x="154" y="553" font-family="system-ui" font-size="12">✨</text>
+  <circle cx="200" cy="548" r="14" fill="#ece5db"/>
+  <text x="194" y="553" font-family="system-ui" font-size="12">📖</text>
+
+  <!-- Main journal -->
+  <g filter="url(#jShadow)">
+    <rect x="328" y="40" width="832" height="595" rx="18" fill="#fff" fill-opacity="0.92"/>
+  </g>
+
+  <!-- Journal header -->
+  <rect x="328" y="40" width="832" height="60" rx="18" fill="#4a5d42" fill-opacity="0.08"/>
+  <text x="360" y="78" font-family="Georgia, serif" font-size="24" fill="#2a2620">Today's Entry</text>
+  <text x="960" y="78" font-family="system-ui" font-size="12" fill="#6b6358">Sep 3, 2026</text>
+  <rect x="1040" y="58" width="72" height="32" rx="16" fill="#4a5d42"/>
+  <text x="1058" y="79" font-family="system-ui" font-size="11" fill="#f5f0e8" font-weight="600">Save</text>
+  <rect x="360" y="58" width="72" height="24" rx="12" fill="#c4a882" fill-opacity="0.2" transform="translate(0,24)"/>
+  <text x="374" y="94" font-family="system-ui" font-size="10" fill="#6b6358">mood: calm</text>
+
+  <!-- Lined paper -->
+  <line x1="360" y1="140" x2="1120" y2="140" stroke="#ece5db"/>
+  <line x1="360" y1="176" x2="1120" y2="176" stroke="#ece5db"/>
+  <line x1="360" y1="212" x2="1120" y2="212" stroke="#ece5db"/>
+  <line x1="360" y1="248" x2="1120" y2="248" stroke="#ece5db"/>
+  <line x1="360" y1="284" x2="960" y2="284" stroke="#ece5db"/>
+
+  <!-- Entry text -->
+  <text x="360" y="132" font-family="Georgia, serif" font-size="18" fill="#2a2620" font-style="italic">A quiet morning reflection...</text>
+  <rect x="360" y="160" width="480" height="9" rx="3" fill="#6b6358" opacity="0.3"/>
+  <rect x="360" y="196" width="560" height="8" rx="3" fill="#6b6358" opacity="0.25"/>
+  <rect x="360" y="232" width="520" height="8" rx="3" fill="#6b6358" opacity="0.2"/>
+  <rect x="360" y="268" width="440" height="8" rx="3" fill="#6b6358" opacity="0.15"/>
+
+  <!-- Past entries -->
+  <text x="360" y="340" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">PAST ENTRIES</text>
+
+  <rect x="360" y="356" width="768" height="72" rx="12" fill="#f5f0e8" stroke="#ece5db"/>
+  <text x="384" y="386" font-family="Georgia, serif" font-size="16" fill="#2a2620" font-style="italic">Notes from the week...</text>
+  <text x="384" y="410" font-family="system-ui" font-size="11" fill="#6b6358">Aug 28 · 3 min read</text>
+  <rect x="1060" y="376" width="52" height="24" rx="12" fill="#4a5d42" fill-opacity="0.12"/>
+  <text x="1072" y="392" font-family="system-ui" font-size="9" fill="#4a5d42">memory</text>
+
+  <rect x="360" y="444" width="768" height="72" rx="12" fill="#f5f0e8" stroke="#ece5db"/>
+  <text x="384" y="474" font-family="Georgia, serif" font-size="16" fill="#2a2620" font-style="italic">Grateful for small wins</text>
+  <text x="384" y="498" font-family="system-ui" font-size="11" fill="#6b6358">Aug 21 · 5 min read</text>
+  <rect x="1060" y="464" width="52" height="24" rx="12" fill="#c4a882" fill-opacity="0.2"/>
+  <text x="1072" y="480" font-family="system-ui" font-size="9" fill="#6b6358">gratitude</text>
+
+  <rect x="360" y="532" width="768" height="72" rx="12" fill="#f5f0e8" stroke="#ece5db"/>
+  <text x="384" y="562" font-family="Georgia, serif" font-size="16" fill="#2a2620" font-style="italic">Weekend city walk</text>
+  <text x="384" y="586" font-family="system-ui" font-size="11" fill="#6b6358">Aug 14 · 4 min read</text>
+  <rect x="1060" y="552" width="52" height="24" rx="12" fill="#4a5d42" fill-opacity="0.12"/>
+  <text x="1072" y="568" font-family="system-ui" font-size="9" fill="#4a5d42">travel</text>
+</svg>

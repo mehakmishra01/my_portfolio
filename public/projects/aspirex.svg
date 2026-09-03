@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="aspireBg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f4ef"/>
+      <stop offset="1" stop-color="#ece5db"/>
+    </linearGradient>
+    <linearGradient id="aspireAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4a5d42"/>
+      <stop offset="1" stop-color="#6d8564"/>
+    </linearGradient>
+    <filter id="aspireShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#2a2620" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#aspireBg)"/>
+
+  <!-- Top nav -->
+  <rect width="1200" height="52" fill="#f5f0e8" fill-opacity="0.98"/>
+  <line x1="0" y1="52" x2="1200" y2="52" stroke="#ddd5c8"/>
+  <rect x="36" y="14" width="24" height="24" rx="6" fill="url(#aspireAccent)"/>
+  <text x="70" y="32" font-family="Georgia, serif" font-size="16" font-weight="600" fill="#2a2620">AspireX</text>
+  <text x="150" y="32" font-family="system-ui, sans-serif" font-size="9" fill="#6b6358" letter-spacing="2">LEARNING PLATFORM</text>
+  <rect x="440" y="14" width="320" height="28" rx="14" fill="#ece5db"/>
+  <circle cx="458" cy="28" r="5" fill="#4a5d42" opacity="0.35"/>
+  <rect x="474" y="24" width="140" height="7" rx="3" fill="#6b6358" opacity="0.25"/>
+  <circle cx="1100" cy="28" r="14" fill="#4a5d42" opacity="0.2"/>
+  <circle cx="1140" cy="28" r="14" fill="#c4a882" opacity="0.35"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="52" width="200" height="623" fill="#f5f0e8"/>
+  <line x1="200" y1="52" x2="200" y2="675" stroke="#ddd5c8"/>
+  <text x="24" y="88" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">ORGANIZATIONS</text>
+  <rect x="16" y="100" width="168" height="44" rx="8" fill="#4a5d42" fill-opacity="0.12" stroke="#4a5d42" stroke-opacity="0.25"/>
+  <rect x="28" y="110" width="28" height="28" rx="6" fill="#4a5d42" fill-opacity="0.35"/>
+  <rect x="64" y="114" width="80" height="8" rx="3" fill="#2a2620" opacity="0.7"/>
+  <rect x="64" y="128" width="56" height="6" rx="3" fill="#6b6358" opacity="0.4"/>
+  <rect x="16" y="154" width="168" height="36" rx="8" fill="transparent"/>
+  <rect x="28" y="160" width="28" height="28" rx="6" fill="#c4a882" opacity="0.35"/>
+  <rect x="64" y="170" width="72" height="7" rx="3" fill="#6b6358" opacity="0.45"/>
+  <rect x="16" y="198" width="168" height="36" rx="8" fill="transparent"/>
+  <rect x="28" y="204" width="28" height="28" rx="6" fill="#6b6358" opacity="0.2"/>
+  <rect x="64" y="214" width="88" height="7" rx="3" fill="#6b6358" opacity="0.35"/>
+
+  <!-- Nav icons -->
+  <rect x="28" y="280" width="24" height="24" rx="6" fill="#4a5d42" opacity="0.15"/>
+  <rect x="28" y="316" width="24" height="24" rx="6" fill="#6b6358" opacity="0.1"/>
+  <rect x="28" y="352" width="24" height="24" rx="6" fill="#6b6358" opacity="0.1"/>
+
+  <!-- Main -->
+  <text x="228" y="98" font-family="Georgia, serif" font-size="24" fill="#2a2620">Good morning, Mahak</text>
+  <text x="228" y="124" font-family="system-ui" font-size="13" fill="#6b6358">3 courses in progress across 2 organizations</text>
+
+  <!-- Stats -->
+  <g filter="url(#aspireShadow)">
+    <rect x="228" y="148" width="160" height="72" rx="12" fill="#fff" fill-opacity="0.75"/>
+    <text x="248" y="174" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.2">ACTIVE LEARNERS</text>
+    <text x="248" y="204" font-family="Georgia, serif" font-size="26" fill="#4a5d42">248</text>
+  </g>
+  <g filter="url(#aspireShadow)">
+    <rect x="404" y="148" width="160" height="72" rx="12" fill="#fff" fill-opacity="0.75"/>
+    <text x="424" y="174" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.2">COMPLETION</text>
+    <text x="424" y="204" font-family="Georgia, serif" font-size="26" fill="#4a5d42">86%</text>
+  </g>
+  <g filter="url(#aspireShadow)">
+    <rect x="580" y="148" width="160" height="72" rx="12" fill="#fff" fill-opacity="0.75"/>
+    <text x="600" y="174" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.2">COURSES</text>
+    <text x="600" y="204" font-family="Georgia, serif" font-size="26" fill="#4a5d42">12</text>
+  </g>
+
+  <!-- Course cards -->
+  <text x="228" y="256" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">YOUR COURSES</text>
+
+  <g filter="url(#aspireShadow)">
+    <rect x="228" y="272" width="340" height="160" rx="14" fill="#fff" fill-opacity="0.85"/>
+    <rect x="244" y="288" width="308" height="72" rx="8" fill="url(#aspireAccent)" fill-opacity="0.15"/>
+    <rect x="260" y="304" width="120" height="10" rx="3" fill="#2a2620" opacity="0.75"/>
+    <rect x="260" y="324" width="180" height="7" rx="3" fill="#6b6358" opacity="0.35"/>
+    <rect x="260" y="340" width="140" height="7" rx="3" fill="#6b6358" opacity="0.2"/>
+    <rect x="244" y="376" width="100" height="7" rx="3" fill="#ece5db"/>
+    <rect x="244" y="376" width="70" height="7" rx="3" fill="#4a5d42" opacity="0.6"/>
+    <text x="520" y="383" font-family="system-ui" font-size="10" fill="#4a5d42">70%</text>
+  </g>
+
+  <g filter="url(#aspireShadow)">
+    <rect x="588" y="272" width="340" height="160" rx="14" fill="#fff" fill-opacity="0.85"/>
+    <rect x="604" y="288" width="308" height="72" rx="8" fill="#c4a882" fill-opacity="0.2"/>
+    <rect x="620" y="304" width="140" height="10" rx="3" fill="#2a2620" opacity="0.75"/>
+    <rect x="620" y="324" width="200" height="7" rx="3" fill="#6b6358" opacity="0.35"/>
+    <rect x="604" y="376" width="100" height="7" rx="3" fill="#ece5db"/>
+    <rect x="604" y="376" width="40" height="7" rx="3" fill="#4a5d42" opacity="0.6"/>
+    <text x="880" y="383" font-family="system-ui" font-size="10" fill="#4a5d42">40%</text>
+  </g>
+
+  <!-- Multi-tenant panel -->
+  <g filter="url(#aspireShadow)">
+    <rect x="956" y="148" width="220" height="284" rx="14" fill="#fff" fill-opacity="0.8"/>
+    <text x="976" y="178" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">MULTI-TENANT</text>
+    <text x="976" y="202" font-family="Georgia, serif" font-size="17" fill="#2a2620">Workspace Overview</text>
+    <circle cx="1000" cy="240" r="18" fill="#4a5d42" opacity="0.25"/>
+    <circle cx="1044" cy="240" r="18" fill="#c4a882" opacity="0.4"/>
+    <circle cx="1088" cy="240" r="18" fill="#6b6358" opacity="0.2"/>
+    <circle cx="1132" cy="240" r="18" fill="#4a5d42" opacity="0.15"/>
+    <rect x="976" y="272" width="180" height="1" fill="#ddd5c8"/>
+    <rect x="976" y="292" width="140" height="7" rx="3" fill="#2a2620" opacity="0.6"/>
+    <rect x="976" y="308" width="168" height="6" rx="3" fill="#6b6358" opacity="0.3"/>
+    <rect x="976" y="322" width="150" height="6" rx="3" fill="#6b6358" opacity="0.2"/>
+    <rect x="976" y="352" width="88" height="28" rx="14" fill="#4a5d42"/>
+    <text x="996" y="371" font-family="system-ui" font-size="10" fill="#f5f0e8" font-weight="600">Switch org</text>
+  </g>
+
+  <!-- Activity strip -->
+  <g filter="url(#aspireShadow)">
+    <rect x="228" y="456" width="708" height="180" rx="14" fill="#fff" fill-opacity="0.75"/>
+    <text x="252" y="488" font-family="system-ui" font-size="9" fill="#6b6358" letter-spacing="1.5">RECENT ACTIVITY</text>
+    <circle cx="272" cy="524" r="20" fill="#4a5d42" opacity="0.15"/>
+    <rect x="304" y="514" width="160" height="8" rx="3" fill="#2a2620" opacity="0.55"/>
+    <rect x="304" y="530" width="220" height="6" rx="3" fill="#6b6358" opacity="0.3"/>
+    <circle cx="272" cy="572" r="20" fill="#c4a882" opacity="0.25"/>
+    <rect x="304" y="562" width="140" height="8" rx="3" fill="#2a2620" opacity="0.55"/>
+    <rect x="304" y="578" width="200" height="6" rx="3" fill="#6b6358" opacity="0.3"/>
+    <circle cx="272" cy="620" r="20" fill="#6b6358" opacity="0.15"/>
+    <rect x="304" y="610" width="180" height="8" rx="3" fill="#2a2620" opacity="0.55"/>
+    <rect x="304" y="626" width="240" height="6" rx="3" fill="#6b6358" opacity="0.3"/>
+  </g>
+</svg>
