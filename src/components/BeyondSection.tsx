@@ -20,37 +20,41 @@ export default function BeyondSection() {
 
         <div className="beyond-grid">
           {personalInterests.map((item, i) => {
+            const cardClass =
+              'bento-tile bento-tile-hover beyond-card group flex h-full min-h-[220px] flex-col'
+
             const inner = (
               <>
-                <span className="font-condensed text-5xl text-cream/8">{String(i + 1).padStart(2, '0')}</span>
-                <h3 className="mt-4 font-serif text-xl font-medium text-cream transition-colors group-hover:text-sage-soft">
+                <h3 className="font-serif text-xl font-medium text-cream transition-colors group-hover:text-sage-soft">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-cream-muted">{item.description}</p>
-                {item.href && (
-                  <span className="mt-5 inline-flex items-center gap-2 text-xs tracking-widest text-sage uppercase opacity-0 transition-all group-hover:opacity-100">
-                    Explore
-                    <ArrowUpRight size={12} />
-                  </span>
-                )}
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-cream-muted">{item.description}</p>
+                <span
+                  className={`mt-5 inline-flex min-h-[1.25rem] items-center gap-2 text-xs tracking-widest text-sage uppercase ${
+                    item.href ? 'opacity-0 transition-all group-hover:opacity-100' : 'invisible'
+                  }`}
+                >
+                  Explore
+                  <ArrowUpRight size={12} />
+                </span>
               </>
             )
 
             return (
-              <FadeIn key={item.title} delay={i * 0.1}>
-                <TiltCard intensity={6}>
+              <FadeIn key={item.title} delay={i * 0.1} className="h-full">
+                <TiltCard intensity={6} className="h-full">
                   {item.href ? (
                     <motion.a
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileTap={{ scale: 0.98 }}
-                      className="bento-tile bento-tile-hover group block h-full"
+                      className={cardClass}
                     >
                       {inner}
                     </motion.a>
                   ) : (
-                    <div className="bento-tile bento-tile-hover group h-full">{inner}</div>
+                    <div className={cardClass}>{inner}</div>
                   )}
                 </TiltCard>
               </FadeIn>

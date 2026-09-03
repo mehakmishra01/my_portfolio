@@ -40,18 +40,18 @@ export const tools = [
 
 export const personalInterests = [
   {
-    title: 'Writing',
-    description: 'Essays and reflections — a space for thought beyond the screen.',
+    title: '01 — Writing',
+    description: 'Thoughts, reflections, and words that needed somewhere to exist.',
     href: contact.substack,
   },
   {
-    title: 'Singing',
-    description: 'Music as a way to unwind and express what words sometimes cannot.',
+    title: '02 — Singing',
+    description: 'A way of feeling what words cannot always express.',
     href: contact.instagram,
   },
   {
-    title: 'Reading',
-    description: 'Philosophy, fiction, and the kind of books that stay with you.',
+    title: '03 — Reading',
+    description: 'Stories that linger, minds that haunt, questions that remain.',
     href: null,
   },
 ] as const
@@ -85,8 +85,8 @@ export const services = [
 
 export const projects = [
   {
-    title: 'AspireX Marketing',
-    description: 'Marketing website for AspireX AI Board Helper — polished landing with clear product storytelling.',
+    title: 'AspireX Coaching Platform',
+    description: 'Complete digital platform for coaching institutes — student lifecycle, multi-center ops, and automated workflows.',
     tags: ['Full Stack', 'Product'],
     github: 'https://www.aspirexlearning.com/',
     image: '/projects/aspirex.svg',

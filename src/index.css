@@ -840,12 +840,17 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
+  align-items: stretch;
 }
 
 @media (min-width: 768px) {
   .beyond-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.beyond-card {
+  width: 100%;
 }
 
 /* ── Interactive links ── */

@@ -22,7 +22,7 @@ export default function Contact() {
                   I'd love to hear from you.
                 </p>
                 <motion.a
-                  href={`mailto:${contact.email}`}
+                  href={`mailto:${contact.email}?subject=Work%20Together`}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                   className="btn-editorial btn-editorial-filled mt-8 inline-flex"
