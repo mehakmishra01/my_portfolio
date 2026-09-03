@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { useRef, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 
 type TiltCardProps = {
   children: ReactNode
@@ -9,6 +9,11 @@ type TiltCardProps = {
 
 export default function TiltCard({ children, className = '', intensity = 8 }: TiltCardProps) {
   const ref = useRef<HTMLDivElement>(null)
+  const [canTilt, setCanTilt] = useState(
+    () =>
+      typeof window !== 'undefined' &&
+      window.matchMedia('(hover: hover) and (pointer: fine)').matches,
+  )
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
@@ -21,8 +26,16 @@ export default function TiltCard({ children, className = '', intensity = 8 }: Ti
     damping: 25,
   })
 
+  useEffect(() => {
+    const mq = window.matchMedia('(hover: hover) and (pointer: fine)')
+    const update = () => setCanTilt(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
+
   const handleMove = (e: React.MouseEvent) => {
-    if (!ref.current) return
+    if (!canTilt || !ref.current) return
     const rect = ref.current.getBoundingClientRect()
     x.set((e.clientX - rect.left) / rect.width - 0.5)
     y.set((e.clientY - rect.top) / rect.height - 0.5)
@@ -31,6 +44,10 @@ export default function TiltCard({ children, className = '', intensity = 8 }: Ti
   const handleLeave = () => {
     x.set(0)
     y.set(0)
+  }
+
+  if (!canTilt) {
+    return <div className={`tilt-card ${className}`}>{children}</div>
   }
 
   return (

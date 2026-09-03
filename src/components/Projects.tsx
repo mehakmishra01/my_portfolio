@@ -82,14 +82,14 @@ export default function Projects() {
 
           <div className="work-grid-rest">
             {rest.map((project, i) => (
-              <FadeIn key={project.title} delay={0.1 + i * 0.08}>
-                <TiltCard intensity={7}>
+              <FadeIn key={project.title} delay={0.1 + i * 0.08} className="work-grid-item">
+                <TiltCard intensity={7} className="work-tilt-card">
                   <motion.a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileTap={{ scale: 0.98 }}
-                    className="bento-tile bento-tile-hover group block h-full overflow-hidden p-0"
+                    className="bento-tile bento-tile-hover group block overflow-hidden p-0"
                   >
                     <div className="work-card-inner">
                       <div
