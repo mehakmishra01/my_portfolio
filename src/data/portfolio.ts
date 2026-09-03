@@ -87,7 +87,7 @@ export const projects = [
   {
     title: 'AspireX Marketing',
     description: 'Marketing website for AspireX AI Board Helper — polished landing with clear product storytelling.',
-    tags: ['Web Design', 'UI/UX'],
+    tags: ['Full Stack', 'Product'],
     github: 'https://www.aspirexlearning.com/',
     image: '/projects/aspirex.svg',
     featured: true,
